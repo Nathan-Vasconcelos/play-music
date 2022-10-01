@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <title>Play music</title>
+</head>
+<body>
+    <main>
+        <div class="caixa-musica">
+            <img src="img/logo.jpg" alt="logo" class="logo">
+            <p id="nome-musica" class="nome-musica">Play music</p>
+            <div class="icones">
+                <i onclick="anterior()" class="mdi mdi-skip-previous-circle"></i>
+                <i onclick="tocar()" id="play" class="mdi mdi-play-circle"></i>
+                <i onclick="resetar()" class="mdi mdi-restart"></i>
+                <i onclick="proxima()" class="mdi mdi-skip-next-circle"></i>
+            </div>
+        </div>
+    </main>
+    <audio id="psy" class="pause" src="musicas/ytmp3free.cc_virtual-wraith-mb-psychotronics-youtubemp3free.org.mp3"></audio>
+    <audio id="enemy" class="pause" src="musicas/Virtual Wraith - You Are Your Own Enemy (64 kbps).mp3"></audio>
+    <audio id="crazy" class="pause" src="musicas/Virtual Wraith & ЯMB - Crazy Ride (64 kbps).mp3"></audio>
+    <script src="js/main.js"></script>
+</body>
+</html>

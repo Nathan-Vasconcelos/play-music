@@ -1,0 +1,60 @@
+body {
+    background: rgba(0, 0, 0, 0.86);
+}
+
+main {
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #D4145A, #FBB03B);
+    margin: 2% auto;
+    display: flex;
+    width: 40%;
+    height: 90vh;
+}
+
+.caixa-musica {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% auto;
+    border: none;
+    height: 70vh;
+    width: 50%;
+    
+}
+
+.logo {
+    width: 100%;
+}
+
+.nome-musica {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.icones {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1120px) {
+    .caixa-musica {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    main {
+        width: auto;
+    }
+}
